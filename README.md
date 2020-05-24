@@ -1,1 +1,1 @@
-# Small system design projects or  codes for improving engineering
+# Small system design projects or  codes for improving engineering skills
