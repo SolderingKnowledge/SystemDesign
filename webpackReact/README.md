@@ -9,6 +9,10 @@ installing webpack as dev dependency or you could run as `-D` instead of `--save
 
 4 `npm i -D babel-core babel-loader babel-preset-env babel-preset-react html-webpack-plugin` installing babel as dev dependency
 
+5 `npm i redux react-redux redux-saga`
+
+6 `npm install -D babel-loader @babel/core @babel/preset-env webpack`
+
 ```js
     // hot reloads 
     "start": "webpack-dev-server --mode development --open --hot",
