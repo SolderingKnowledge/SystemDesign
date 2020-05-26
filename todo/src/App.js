@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import Input from "./components/Input";
 import List from "./components/List";
-// import {uuid} from "uuid";
+import {v1 as uuid} from "uuid"; 
 
 class App extends Component {
     state = {
         list: [],
-        id: "2",
+        id: uuid(),
+        // id: 0,
         item: "",
         editItem: false
     }
@@ -16,17 +17,19 @@ class App extends Component {
             item: e.target.value
         })
     }
+    // adding item onSubmit
     onSubmit = e => {
         e.preventDefault();
         const newItem = {
             id: this.state.id,
             title: this.state.item,
         }
-        const updatedItems = [...this.state.items, newItem];
+        const updatedItems = [...this.state.list, newItem];
         this.setState({
             list: updatedItems,
             items: "",
-            id: "2",
+            id:uuid(),
+            // id: this.state.id+1,
             editItem: false
         });
     }
@@ -39,6 +42,7 @@ class App extends Component {
 
     onDelete = id => {
         const filteredList = this.state.list.filter( i => i.id !== id);
+        // const filteredList = this.state.list.splice(id, 1);
         this.setState({
             list: filteredList
         });

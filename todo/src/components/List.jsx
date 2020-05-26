@@ -10,8 +10,9 @@ export default class List extends Component {
                         <Item 
                             key = {idx}
                             title = {item.title}
-                            onDelete = {onDelete(item.id)}
-                            edit = {edit(item.id)}
+                            onDelete = {() => onDelete(item.id)}
+                            // onDelete = {() => onDelete(idx)}
+                            edit = {() => edit(item.id)}
                         />
                     )
                 })}
