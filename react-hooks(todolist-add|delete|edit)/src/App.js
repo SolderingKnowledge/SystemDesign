@@ -47,7 +47,7 @@ function App() {
     const save = (index)=>{
         const newTodos = [...todos];
         newTodos[index].edit = !newTodos[index].edit;
-        // if(newTodos[index].isCompleted) newTodos[index].isCompleted=false // optionl after edit
+        // if(newTodos[index].isCompleted) newTodos[index].isCompleted=false // optional after edit
         setTodos(newTodos);
     }
 
