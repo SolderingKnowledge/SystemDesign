@@ -6,12 +6,12 @@ import Form from "./components/TodoForm";
 function App() {
     const [ todos, setTodos ] = useState([
         {
-            text: "React tutorial",
+            text: "Do laundry",
             isCompleted: false,
             edit: false
         },
         {
-            text: "Meet my friend",
+            text: "Read a book",
             isCompleted: false,
             edit:false
         }
@@ -44,6 +44,13 @@ function App() {
         setTodos(newTodos);
     }
 
+    const save = (index)=>{
+        const newTodos = [...todos];
+        newTodos[index].edit = !newTodos[index].edit;
+        if(newTodos[index].isCompleted) newTodos[index].isCompleted=false
+        setTodos(newTodos);
+    }
+
     return (
         <div className="App">
             {
@@ -52,7 +59,7 @@ function App() {
                         <Todo key={idx} index={idx}
                             todo={todo} complete={complete}
                             delette={delette} edit={edit}
-                            change={change}
+                            change={change} save={save}
                         /> 
                     )
                 })

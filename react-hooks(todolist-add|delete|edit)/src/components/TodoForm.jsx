@@ -12,7 +12,7 @@ function Form({add}) {
 
     return (
         <form onSubmit={onSubmit}>
-            <input type="text" placeholder="add todo list" value={value} onChange={ e => {
+            <input type="text" placeholder="add todo.." value={value} onChange={ e => {
                 setValue(e.target.value);
             }} />
         </form>
