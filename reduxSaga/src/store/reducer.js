@@ -1,6 +1,7 @@
 const initialState = {
   counter: 18,
-  text:"Hello world!"
+  text:"Hello world!",
+  title: "Hi there"
 };
 
 const reducer = (state = initialState, action) => {
@@ -15,6 +16,9 @@ const reducer = (state = initialState, action) => {
       break;
     case "TEXT":
         newState.text += "!"
+        break;
+    case "TITLE":
+        newState.title += 1;
         break;
     default:
         return state;
