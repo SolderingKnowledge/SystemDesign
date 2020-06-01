@@ -1,5 +1,6 @@
 const initialState = {
-  counter: 18
+  counter: 18,
+  text:"Hello world!"
 };
 
 const reducer = (state = initialState, action) => {
@@ -12,6 +13,9 @@ const reducer = (state = initialState, action) => {
     case "DECREMENT_ASYNC":
       newState.counter -= action.value;
       break;
+    case "TEXT":
+        newState.text += "!"
+        break;
     default:
         return state;
   }
