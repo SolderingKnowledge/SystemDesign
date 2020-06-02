@@ -18,7 +18,7 @@ const reducer = (state = initialState, action) => {
         newState.text += "!"
         break;
     case "TITLE":
-        newState.title += 1;
+        newState.title += 1;//redux value gets ignored
         break;
     default:
         return state;
