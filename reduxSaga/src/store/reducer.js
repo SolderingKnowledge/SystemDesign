@@ -12,7 +12,7 @@ const reducer = (state = initialState, action) => {
       newState.counter += action.value;
       break;
     case "DECREMENT_ASYNC":
-      newState.counter -= action.value;
+      newState.counter -= action.value;// redux saga, handles async actions
       break;
     case "TEXT":
         newState.text += "!"
