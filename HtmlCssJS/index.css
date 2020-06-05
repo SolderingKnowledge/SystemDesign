@@ -1,0 +1,13 @@
+.first {
+    width: 48%;
+    height: 40px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.second {
+    width: 48%;
+    border: solid #140808;
+    height: 40px;
+    display: inline-block;
+    box-sizing: border-box;
+}
