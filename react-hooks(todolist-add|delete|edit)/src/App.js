@@ -50,7 +50,7 @@ function App() {
         // if(newTodos[index].isCompleted) newTodos[index].isCompleted=false // optional after edit
         setTodos(newTodos);
     }
-
+    
     return (
         <div className="App">
             {
