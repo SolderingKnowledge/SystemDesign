@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slide Component should render should show text and match snapshot 1`] = `
+<li
+  className="slide"
+  tabIndex="0"
+>
+  <h1
+    aria-label="slide 1"
+    className="number-item"
+  >
+    1
+  </h1>
+</li>
+`;

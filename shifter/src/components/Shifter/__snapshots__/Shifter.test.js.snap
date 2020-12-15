@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shifter component should render should be defined and have it's length and match snapshot 1`] = `
+<div
+  className="shifter"
+>
+  <Slides
+    left={-340}
+    marginLeft={0}
+    onClickNext={[Function]}
+    onClickPrev={[Function]}
+    screenWidth={0}
+    sublist={
+      Array [
+        20,
+        1,
+        2,
+        3,
+        4,
+      ]
+    }
+    viewportSlideCount={3}
+    width={340}
+  />
+</div>
+`;

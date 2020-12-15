@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Slides component should match snapshot 1`] = `
+<section
+  aria-label="shifter section"
+  className="slides"
+  tabIndex="0"
+>
+  <WithStyles(ForwardRef(IconButton))
+    aria-label="slide previus"
+    id="prev-button"
+    onClick={[MockFunction]}
+  >
+    <img
+      alt="Arrow left"
+      src="backward.svg"
+    />
+  </WithStyles(ForwardRef(IconButton))>
+  <div
+    className="view-port"
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
+  >
+    <ul
+      className="list"
+      style={
+        Object {
+          "left": "0px",
+          "marginLeft": "0px",
+        }
+      }
+    >
+      <Slide
+        key="0"
+        slide={1}
+      />
+      <Slide
+        key="1"
+        slide={2}
+      />
+      <Slide
+        key="2"
+        slide={3}
+      />
+      <Slide
+        key="3"
+        slide={4}
+      />
+      <Slide
+        key="4"
+        slide={5}
+      />
+    </ul>
+  </div>
+  <WithStyles(ForwardRef(IconButton))
+    aria-label="slide next"
+    id="next-button"
+    onClick={[MockFunction]}
+  >
+    <img
+      alt="Arrow right"
+      src="forward.svg"
+    />
+  </WithStyles(ForwardRef(IconButton))>
+</section>
+`;
